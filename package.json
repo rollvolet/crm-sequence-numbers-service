@@ -1,0 +1,18 @@
+{
+  "name": "crm-sequence-numbers-service",
+  "version": "0.0.0",
+  "description": "Microservice generating sequence numbers for CRM resources",
+  "main": "app.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erika Pauwels <erika.pauwels@redpencil.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollvolet/crm-sequence-numbers-service.git"
+  },
+  "dependencies": {
+    "date-fns": "^3.2.0"
+  }
+}

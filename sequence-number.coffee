@@ -31,7 +31,7 @@ export fetchNextSequenceNumber = (type, scope) ->
     initValue = (parseInt(format(startOfYear, 'yy')) + 10) * 10000 + 1
     fetchNextInt type, 'https://purl.org/p2p-o/invoice#invoiceNumber', filter, initValue
 
-  else if type is 'http://www.w3.org/2006/vcard/ns#Vcard'
+  else if type is 'http://www.w3.org/2006/vcard/ns#VCard'
     fetchNextInt type, 'http://www.w3.org/2006/vcard/ns#hasUID'
 
   else if type is 'http://www.semanticdesktop.org/ontologies/2007/03/22/nco#Contact'

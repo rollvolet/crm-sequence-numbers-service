@@ -12,7 +12,7 @@ export fetchNextSequenceNumber = (type, scope) ->
 
   else if type is 'http://schema.org/Offer' # e.g. 34/01/14/02
     prefix = format(addYears(new Date(), 10), 'yy/MM/dd');
-    filter = "FILTER(STRSTARTS(?number, #{sparqlEscapeString(prefix)}))"
+    filter = "FILTER(STRSTARTS(STR(?number), #{sparqlEscapeString(prefix)}))"
     offerNumber = await fetchLatestNumber type, 'http://schema.org/identifier', filter
     if offerNumber
       sequenceNumber = parseInt(offerNumber.substr(offerNumber.lastIndexOf('/') + 1));

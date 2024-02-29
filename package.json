@@ -1,6 +1,6 @@
 {
   "name": "crm-sequence-numbers-service",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Microservice generating sequence numbers for CRM resources",
   "main": "app.coffee",
   "scripts": {
